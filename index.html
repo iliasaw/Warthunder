@@ -51,8 +51,6 @@
 <!--<script src="js/script.js"></script>-->
 <!--<link href="//static-tss.warthunder.com/style/style.css?v=29" rel="stylesheet" />-->
 
-<script src="./files/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="./files/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./files/bootstrap-multiselect.js"></script>
 
 
@@ -1239,10 +1237,8 @@
 
             <div class="logo_tournament"><img card-name="imageTournament" src="./files/afgan.jpg" height="70px " class="circle"></img></div>
             <div class="name_tournament" card-name="headerNameTournament">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Афганская война</div>
-            <span class="sprite_main start_battle" style="position: absolute;left: 110px;top: 50px;"></span>
             <span class="text_start_tournament">Начало:</span>
             <span class="text_start_tournament_date_card" card-name="dayTournament">27.11.22, 19:00 МСК</span>
-            <span class="sprite_main battle_on" style="position: absolute;left: 350px;top: 50px;"></span>
             </span>
 
             <div class="block_tournament_more_info">
@@ -1251,16 +1247,8 @@
                     <div class="line_tournament_card" style="height: 1px; background: #31424A;margin-top: 10px;margin-bottom:20px; width: 100%;"></div>
                     <div class="row" style="margin: 0 0 10px 0;">
                         <div class="col-lg-7">
-                            <span class="sprite_main teams"></span> <span class="text_card_tournament_white" style="margin-left: 10px;" card-name="countTeam">9/64</span> <span class="text_card_tournament_gray">команд участвует <span card-name="reserve_team">(1+0)</span></span>
                         </div>
                         <div class="col-lg-5">
-                            <span class="sprite_main bracket"></span> <span class="text_card_tournament_white" style="margin-left: 10px;" card-name="typeTournament" data-original-title="type_tournament_single-elumination">SE</span> <span class="text_card_tournament_gray">tournament</span>
-                        </div>
-                    </div>
-
-                    <div class="row" style="margin: 0 0 10px 0;">
-                        <div class="col-lg-12">
-                            <span class="sprite_main time_on"></span> <span class="text_card_tournament_white" style="margin-left: 10px;"> Расписание турнира </span><span class="text_card_tournament_gray" card-name="schedulerTournament">15.11.22, 20:50 МСК - 15.11.22, 23:15 МСК</span>
                         </div>
                     </div>
 
@@ -2430,268 +2418,6 @@
 
 <div id="all_window_t"></div>
 
-<script>
-    //$('#all_window_t').load("<?//=$CONFIG['tpl'];?>///all_windows_<?//=$lang; ?>//.htm?v=5", function(){
-    //        //    load_tournament_page(TOURNAMENT_ID, "about_info");
-    //        //    GetTournamentsList( document.getElementsByName("templateCardTournaments").length - 1, getParamForFilterTournaments() );
-    //        //    GetMyTournamentsList( document.getElementsByName("templateCardTournaments").length - 1 );
-    //        <!--    -->    //    $('#panelPrecios [data-toggle="tooltip"]').tooltip({
-    //        animated: 'fade',
-    //        placement: 'bottom',
-    //        html: true
-    //    });
-    //    $(document).ready(function(){
-    //        $('#select-gear').selectize({
-    //            sortField: 'text'
-    //        });
-    //
-    //        var local_main_param = localStorage.getItem("next_check");
-    //        var time_ = time();
-    //        if(time_ > Number(local_main_param))
-    //        {
-    //            for (var key_ in localStorage)
-    //            {
-    //                var arrayData = $.parseJSON(localStorage.getItem(key_));
-    //
-    //                if (key_ == 'about_info_7562'){
-    //                    if(typeof(arrayData) === typeof({}) && arrayData != null)
-    //                    {
-    //                        if("time_create" in arrayData)
-    //                        {
-    //                            if (Number(arrayData['time_create']) > 1562861734)
-    //                            {
-    //                                localStorage.removeItem(key_);
-    //                                console.log('clear ' + key_)
-    //                            }
-    //
-    //                        }
-    //                    }
-    //                }
-    //
-    //                if(typeof(arrayData) === typeof({}) && arrayData != null)
-    //                {
-    //                    if("time_del" in arrayData)
-    //                    {
-    //                        if (time_+8640000 > Number(arrayData['time_del']))
-    //                        {
-    //                            localStorage.removeItem(key_);
-    //                            console.log('clear ' + key_)
-    //                        }
-    //
-    //                    }
-    //                }
-    //            }
-    //            localStorage.setItem("next_check", time()+3600*5);
-    //        }
-    //
-    //
-    //        $('[data-toggle="tooltip"]').tooltip();
-    //        $('[data-toggle="popover"]').popover();
-    //
-    //        $('[data-parent=#accordion]').bind('click', function() {
-    //            $('#gladiatorsMenu').collapse('hide');
-    //            $('#leagueThunderMenu').collapse('hide');
-    //            $('#leagueSemiMenu').collapse('hide');
-    //        });
-    //
-    //        if( $_GET('battleID') != false ){
-    //            joinRoom($_GET('battleID'));
-    //        }
-    //
-    //        $(function() {
-    //            $('#table_teams_tournament_page_not_confirm').on('hide.bs.collapse', function () {
-    //                $('#viewAllTeams').html('<span class="glyphicon glyphicon-chevron-down"></span> '+LANG_JS.viewAllTeams+' ');
-    //            });
-    //            $('#table_teams_tournament_page_not_confirm').on('show.bs.collapse', function () {
-    //                $('#viewAllTeams').html('<span class="glyphicon glyphicon-chevron-up"></span> '+LANG_JS.hideAllTeams+'');
-    //            });
-    //        });
-    //
-    //        $(function() {
-    //
-    //            $('#show_group_match').on('hide.bs.collapse', function () {
-    //                $('#show_group_match').html('<span class="glyphicon glyphicon-eye-close view text-right"></span>');
-    //            });
-    //            $('#show_group_match').on('show.bs.collapse', function () {
-    //                $('#show_group_match').html('<span class="glyphicon glyphicon-eye-open view text-right"></span>');
-    //            });
-    //
-    //        });
-    //
-    //        if( window.location['hash'] != 'undefined' && window.location['hash'] != '' ){
-    //
-    //            var arrHash = window.location['hash'].substring(1).split('-');
-    //
-    //            if( arrHash[0] == 'info' ){
-    //                viewerBlock( arrHash[1], TOURNAMENT_ID, true );
-    //                if( arrHash[1] == 'info_bracket' ){
-    //                    // if (SWISS_BRACKET == false){
-    //                    //     checkBracket( 'bracket', 1, SHORT_GLOBAL );
-    //                    // }
-    //                    // else{
-    //                    //     checkBracket( 'bracket_swiss', 1, SHORT_GLOBAL );
-    //                    // }
-    //                }
-    //                else if( arrHash[1] == 'stats_tournaments' ){
-    //                    GetStatsTournamentShort( TOURNAMENT_ID);
-    //                }
-    //            }
-    //            else if( arrHash[0] == 'team' ) {
-    //                var arrTeam = arrHash[1].split('_');
-    //                //arrTeam[0] - teamID
-    //                //arrTeam[1] - tournamentID
-    //                var settings = {
-    //                    "async": true,
-    //                    "crossDomain": true,
-    //                    "url": "functions.php",
-    //                    "method": "POST",
-    //                    "headers": {
-    //                        "content-type": "application/x-www-form-urlencoded"
-    //                    },
-    //                    "data": {
-    //                        "tournamentID": arrTeam[1],
-    //                        "teamID": arrTeam[0],
-    //                        "action": "GetCheckResultMyTeam"
-    //                    }
-    //                };
-    //
-    //
-    //                $.ajax( settings ).done(function ( response ) {
-    //                    var arrayData = $.parseJSON(response);
-    //
-    //                    if( arrayData.status == 'OK' && arrayData.data == true ){
-    //                        myTeam(0, arrTeam[1])
-    //                    }
-    //                    else{
-    //                        infoTeam( arrTeam[0], arrTeam[1] );
-    //                    }
-    //
-    //                });
-    //            }
-    //            else if ( arrHash[0] == 'rating' ){
-    //                viewerBlock( arrHash[1], 0, true );
-    //            }
-    //        }
-    //
-    //        $('#clipboard_button').click(function () {
-    //            $('#directLinkTeam').select(function () {
-    //                document.execCommand('copy')
-    //            });
-    //        });
-    //
-    //
-    //        $(".team_container").hover(function () {
-    //            var className = $(this).attr("data-resultid");
-    //
-    //            $('[data-resultid=' + className + ']').addClass("highlight");
-    //        }, function () {
-    //            $('.team_container').removeClass("highlight");
-    //        });
-    //
-    //
-    //        // Обработка форм
-    //        $('#teamName').blur(function(){
-    //            $('#teamName').removeClass();
-    //            var nameLngth = $('#teamName').val().length;
-    //
-    //            if( nameLngth < 2 || nameLngth > 10 || /[А-яЁё]/.test( $('#teamName').val()  ) ){
-    //                $('#teamName').addClass('input_error');
-    //                $(this).next().text(LANG_JS.errorNameTeam);
-    //                var btn = $('.btn');
-    //                btn.button('reset');
-    //            } else {
-    //                $('#teamName').addClass('input_valid');
-    //                $(this).next().text('');
-    //            }
-    //        });
-    //        $('#contactsTeamCaptain').blur(function(){
-    //            $('#contactsTeamCaptain').removeClass();
-    //            var nameLngth = $('#contactsTeamCaptain').val().length;
-    //
-    //            if( nameLngth <= 1 || nameLngth > 100 ){
-    //                $('#contactsTeamCaptain').addClass('input_error');
-    //                $(this).next().text(LANG_JS.contactTeamCaptain);
-    //                var btn = $('.btn');
-    //                btn.button('reset');
-    //            } else {
-    //                $('#contactsTeamCaptain').addClass('input_valid');
-    //                $(this).next().text('');
-    //            }
-    //        });
-    //        $('#descriptionTeam').blur(function(){
-    //            $('#descriptionTeam').removeClass();
-    //            var nameLngth = $('#descriptionTeam').val().length;
-    //
-    //            if( nameLngth > 200 ){
-    //                $('#descriptionTeam').addClass('input_error');
-    //                $(this).next().text(LANG_JS.descriptionTeamError);
-    //                var btn = $('.btn');
-    //                btn.button('reset');
-    //            } else {
-    //                $('#descriptionTeam').addClass('input_valid');
-    //                $(this).next().text('');
-    //            }
-    //        });
-    //        $('#keyAccess').blur(function(){
-    //            $('#keyAccess').removeClass();
-    //            var nameLngth = $('#keyAccess').val().length;
-    //
-    //            if( nameLngth <= 1  ){
-    //                $('#keyAccess').addClass('input_error');
-    //                $(this).next().text(LANG_JS.keyError);
-    //                var btn = $('.btn');
-    //                btn.button('reset');
-    //            } else {
-    //                $('#keyAccess').addClass('input_valid');
-    //                $(this).next().text('');
-    //            }
-    //        });
-    //        $('#passwordTeam').blur(function(){
-    //            $('#passwordTeam').removeClass();
-    //            var nameLngth = $('#passwordTeam').val().length;
-    //
-    //            if( nameLngth < 4 || nameLngth > 20 ){
-    //                $('#passwordTeam').addClass('input_error');
-    //                $(this).next().text(LANG_JS.passwordError);
-    //                var btn = $('.btn');
-    //                btn.button('reset');
-    //            } else {
-    //                $('#passwordTeam').addClass('input_valid');
-    //                $(this).next().text('');
-    //            }
-    //        });
-    //
-    //        $('#passwordTeamStatus').change( function(){
-    //            if($('#passwordTeamStatus').prop('checked')) {
-    //                $("#passwordTeam").css("display","");
-    //                $("#passwordTeam").removeAttr("disabled");
-    //                $("#passwordTeam").attr( 'class', "input_1" )
-    //            }
-    //            else{
-    //                $("#passwordTeam").css("display","none");
-    //                $("#passwordTeam").attr("disabled", "disabled");
-    //            }
-    //        });
-    //
-    //        $(".listTournaments").hover(function(){
-    //            var className = $(this).attr("id");
-    //
-    //            $('[id='+className+']').addClass("highlight");
-    //        }, function(){
-    //            $('.listTournaments').removeClass("highlight");
-    //        });
-    //
-    //        $('.listTournaments').click(function() {
-    //            var className = $(this).attr("id");
-    //            $('.listTournaments').removeClass('highlight_click');
-    //            $('[id='+className+']').addClass('highlight_click');
-    //            return false;
-    //        });
-    //
-    //    });
-    //});
-</script>
-
 
 
 
@@ -2701,38 +2427,6 @@
 </script>
 
 
-<script src="./files/bootstrap.min.js(1)"></script>
-<script>
-    LOGIN_STATUS = 0;
-    if(LOGIN_STATUS == 1)
-    {
-        $('#ratingCheck').prop('checked', true);
-        var local_main_param = localStorage.getItem('all_tournaments');
-        if( local_main_param != null )
-        {
-            var tournaments = $.parseJSON(local_main_param);
-            if( tournaments['my_rating'] == null  || Number(getCookie('tss_identity_id')) != Number(tournaments['my_rating']['userID']))
-            {
-                localStorage.removeItem('all_tournaments');
-            }
-        }
-
-    }
-    jQuery(function(){
-        jQuery('._datetimepicker5').datetimepicker({
-            format:'m-d-Y H:i'
-        });
-        jQuery('#image_button').click(function(){
-            jQuery('._datetimepicker5').datetimepicker('show');
-        });
-                jQuery.datetimepicker.setLocale('ru');
-        
-    });
-
-    GetTournamentsList( $(".card_tournament.open").length, getParamForFilterTournaments(), 'open' );
-    GetTournamentsList( $(".card_tournament.live").length, getParamForFilterTournaments(), 'live' );
-    GetTournamentsList( $(".card_tournament.past").length, getParamForFilterTournaments(), 'past' );
-</script>
 
 
 
