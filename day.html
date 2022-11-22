@@ -21,7 +21,6 @@
 <link href="./files/css" rel="stylesheet">
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-<script src="./files/js/jquery-3.2.1.min.js"></script>
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
 
 <link href="./files/menu.css" rel="stylesheet">
@@ -41,8 +40,6 @@
 
 
 <!---->
-<script src="./files/js/jquery.datetimepicker.full.js"></script>
-<link href="./files/csss/jquery.datetimepicker.css" rel="stylesheet">
 
 <script src="./files/es5-shims.min.js"></script>
 <!--<script src="//static-tss.warthunder.com/js/share.js"></script>-->
@@ -1252,71 +1249,7 @@
 
 
 
-            <div class="modal fade" id="matchInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-
-                    <div class="window modal-content">
-                        <div class="window_header">
-                            <button type="button" class="close" style="color: #FFF;" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="window_title" id="myModalLabel">Информация о матче</h4>
-                        </div>
-
-                        <div style="display:none" class="loading_img" id="loading_img_infoMatchContentView">
-                            <img src="./files/load.gif">
-                        </div>
-
-                        <div class="modal-body" style="display:" id="infoMatchContentView">
-                            <div class="date_info_match text-center" id="matchInfo_Top_Info"></div>
-
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <div class="block_team_info_match">
-                                        <div class="text-center" style="margin: 15px;">
-                                            <span class="sprite_main team_name_icon_off" style="margin-top: -10px;"></span>
-                                            <span class="teamName_block_info" name="teamNameA_info"></span>
-                                        </div>
-                                        <div class="text-center score_block_info" name="teamACounter_block_info"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2"><img src="./files/bg-vs.png"></div>
-                                <div class="col-lg-5">
-                                    <div class="block_team_info_match">
-                                        <div class="text-center" style="margin: 15px;">
-                                            <span class="sprite_main team_name_icon_off" style="margin-top: -10px;"></span>
-                                            <span class="teamName_block_info" name="teamNameB_info"></span>
-                                        </div>
-                                        <div class="text-center score_block_info" name="teamBCounter_block_info"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="param_math_header" style="margin-top: 20px;margin-bottom: 20px;"><span class="sprite_main stats_off"></span> Параметры матча:</div>
-                            <div id="matchInfo_all_match_param"></div>
-
-                            <div class="param_math_header" style="margin-top: 20px;margin-bottom: 20px;"><span class="sprite_main time_on"></span> Расписание матчей <span data-toggle="tooltip" data-placement="bottom" title="Бои могут идти друг за другом, время старта всех матчей кроме первого может отличаться, при согласии двух команд" class="glyphicon glyphicon-info-sign" style="cursor:pointer"></span></div>
-                            <table class="table_teams table-hover div_opacity param_match_text" style="opacity: 0.1; width: 100%;">
-                                <thead>
-                                <tr style="background: rgba(0, 0, 0, 0.3);">
-                                    <th width="10%" style="padding: 5px;">#</th>
-                                    <th width="45%" style="padding: 5px;">Время приглашения</th>
-                                    <th width="45%" style="padding: 5px;">Время старта</th>
-                                </tr>
-                                </thead>
-                                <tbody id="matchInfo_battle_shedule">
-                                <tr>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
 
         </div>
@@ -5317,7 +5250,7 @@
 
         <div class="block_bg_color" id="team" style="display: ;">
 
-            <div class="loading_img" style="display: none;"> <img src="./files/load.gif"> </div>
+            
             <div class="container" id="card_team_tpl_page" style="display: none;">
 
             </div>
@@ -5325,9 +5258,7 @@
 
 
 
-        <div class="container" style="">
-            <div class="loading_img" style="display: none;"> <img src="./files/load.gif"> </div>
-        </div>
+        
         <div class="container" style="padding-top: 10px;display: none;" id="access_denied_tournament">
             <div class="row">
                 <div class="panel panel-danger">
@@ -5346,63 +5277,7 @@
         <script src="./files/bootstrap.js.загрузка"></script>
         
 
-<div style="background: rgba(0, 0, 0, 0);">
-    <div class="container" style="padding: 20px 0">
-        <div class="row" style="margin-left: 0;">
-            <a href="https://gaijin.ru/">
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main gaijin_ent"></span></div>
-            </div>
-            </a>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main ps4"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main xbox"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main windows"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main steam"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main mac"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main oculus"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main vive"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main linux"></span></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class=""><span class="sprite_main age"></span></div>
-            </div>
 
-        </div>
-        <div class="row" style="margin-left: 0;">
-            <div class="col-auto" style="">
-                <div class="copyrate"><a class="link_a" href="https://tss.warthunder.com/index.php?action=tournament&amp;id=16527&amp;page_load=reg_in_teams#">© 2010—2018 by Gaijin Entertainment. Все права защищены.</a></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class="copyrate"><a class="link_a" href="https://warthunder.ru/ru/support/privacypolicy/">Политика конфиденциальности</a></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class="copyrate"><a class="link_a" href="https://warthunder.ru/ru/support/termsofuse/">Условия использования</a></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class="copyrate"><a class="link_a" href="https://warthunder.ru/ru/support/eula/">Пользовательское соглашение</a></div>
-            </div>
-            <div class="col-auto" style="">
-                <div class="copyrate"><a class="link_a" href="https://warthunder.ru/ru/support/forstreamer/">Оферта для авторов YouTube</a></div>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <div id="all_window_t"></div>
 <script>
