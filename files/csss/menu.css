@@ -501,7 +501,7 @@
 .gaijin-menu .fznormal { font-size: initial; }
 .gaijin-menu .pr0 { padding-right: 0px; }
 .gaijin-menu .flag{
-    background-image:url('../icons.png');
+    background-image:url('icons.png');
     background-repeat:no-repeat;
     background-color:transparent;
     display:inline-block;
