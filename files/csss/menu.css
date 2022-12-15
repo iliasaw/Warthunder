@@ -379,7 +379,7 @@
     z-index: 20;
     cursor: pointer;
     margin-bottom: 10px;
-    background: url('//static-tss.warthunder.com/images/menu/sprite.png') no-repeat;
+    background: url('//files/sprite.png') no-repeat;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -391,7 +391,7 @@
     content: '';
     position: absolute;
     display: block;
-    background-image: url('//static-tss.warthunder.com/images/menu/sprite.png');
+    background-image: url('//files/sprite.png');
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -404,7 +404,7 @@
     content: '';
     position: absolute;
     display: block;
-    background-image: url('//static-tss.warthunder.com/images/menu/sprite.png');
+    background-image: url('//files/sprite.png');
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -501,7 +501,7 @@
 .gaijin-menu .fznormal { font-size: initial; }
 .gaijin-menu .pr0 { padding-right: 0px; }
 .gaijin-menu .flag{
-    background-image:url('../images/menu/icons.png');
+    background-image:url('../icons.png');
     background-repeat:no-repeat;
     background-color:transparent;
     display:inline-block;
