@@ -379,7 +379,7 @@
     z-index: 20;
     cursor: pointer;
     margin-bottom: 10px;
-    background: url('//files/sprite.png') no-repeat;
+    background: url('../sprite.png') no-repeat;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -391,7 +391,7 @@
     content: '';
     position: absolute;
     display: block;
-    background-image: url('//files/sprite.png');
+    background-image: url('../sprite.png');
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -404,7 +404,7 @@
     content: '';
     position: absolute;
     display: block;
-    background-image: url('//files/sprite.png');
+    background-image: url('../sprite.png');
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
